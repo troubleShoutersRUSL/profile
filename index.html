@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unicons.iconsout.com/release/v4.0.0/css/line.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class='content'>
+            <div class='visible'>
+              <p>
+                Hello
+              </p>
+              <ul>
+                  <li>You !</li>
+                <li>UG !</li>
+                <li>Future!</li>
+              </ul>
+            </div>
+          </div>
+        <header>Create Profile</header>
+
+        <form action="#">
+            <div class="form first">
+                <div class="details undergarduate">
+                    <span class="title">Personal information</span>
+
+                    <div class="fields">
+                        <div class="input-fields">
+                            <label>Full Name</label>
+                            <input type="text" placeholder="Enter your name" required>
+                        </div>
+                        <div class="input-fields">
+                            <label>Date of Birth</label>
+                            <input type="date" placeholder="Enter your name" required>
+                        </div>
+                        <div class="input-fields">
+                            <label>Address</label>
+                            <input type="text" placeholder="Enter your address" required>
+                        </div>
+                    </div>
+
+                    <div class="fields">
+                        <div class="input-fields">
+                            <label>Mobile Number</label>
+                            <input type="number" placeholder="Enter mobile number" required 
+                                   minlength="10" maxlength="10" pattern="\d{10}" oninput="this.value=this.value.slice(0,10)">
+                        </div>
+                        
+                        <div class="input-fields">
+                            <label>Gender</label>
+                            <select id="gender" name="Gender" required>
+                                <option value="" disabled selected>Select Your Gender</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="others">Others</option>
+                            </select>
+                        </div>
+                        <div class="input-fields">
+                            <label>NIC</label>
+                            <input type="text" placeholder="Enter NIC number" required 
+                                   minlength="9" maxlength="12" pattern="\d{9,12}">
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="details undergarduate">
+                    <span class="title">Address information</span>
+
+                    <div class="fields">
+                        <div class="input-fields">
+                            <label>Home Number</label>
+                            <input type="text" placeholder="Enter Home No" required>
+                        </div>
+                        <div class="input-fields">
+                            <label>Street Address</label>
+                            <input type="text" placeholder="Enter Street Address" required>
+                        </div>
+                        <div class="input-fields">
+                            <label>City</label>
+                            <input type="text" placeholder="Enter City" required>
+                        </div>
+                    </div>
+
+                    <div class="fields">
+                        <div class="input-fields">
+                            <label>District Name</label>
+                            <input type="text" placeholder="Enter District Name" required>
+                        </div>
+                        
+                       
+                       
+                        
+                    </div>
+                </div>
+
+
+
+
+                <div class="details academic">
+                    <span class="title">Academic information</span>
+
+                    <div class="fields">
+                        <div class="input-fields">
+                            <label>University Name</label>
+                            <select id="university" name="university" required>
+                                <option value="" disabled selected>Select your university</option>
+                                <option value="University of Colombo">University of Colombo</option>
+                                <option value="Eastern University">Eastern University</option>
+                                <option value="University of Jaffna">University of Jaffna</option>
+                                <option value="University of Kelaniya">University of Kelaniya</option>
+                                <option value="University of Moratuwa">University of Moratuwa</option>
+                                <option value="Open University, Nawala">Open University, Nawala</option>
+                                <option value="University of Peradeniya">University of Peradeniya</option>
+                                <option value="Rajarata University">Rajarata University</option>
+                                <option value="University of Ruhuna">University of Ruhuna</option>
+                                <option value="Sabaragamuwa University">Sabaragamuwa University</option>
+                                <option value="South Eastern University">South Eastern University</option>
+                                <option value="University of Sri Jayewardenepura">University of Sri Jayewardenepura</option>
+                                <option value="Uva Wellassa University">Uva Wellassa University</option>
+                                <option value="University of the Visual and Performing Arts">University of the Visual and Performing Arts</option>
+                                <option value="Wayamba University">Wayamba University</option>
+                                <option value="Gampaha Wickramarachchi University">Gampaha Wickramarachchi University</option>
+                                <option value="University of Vavuniya">University of Vavuniya</option>
+                            </select>
+                        </div>
+                        <div class="input-fields">
+                            <label>Faculty</label>
+                            <input type="text" placeholder="Enter faculty name" required>
+                        </div>
+                        <div class="input-fields">
+                            <label>GPA</label>
+                            <input type="number" placeholder="Enter your GPA" required 
+                                   min="0" max="4" step="0.01" pattern="^\d+(\.\d{1,2})?$">
+                        </div>
+                        
+                    </div>
+
+                    <div class="fields">
+                        <div class="input-fields">
+                            <label>Extracurricular Activity</label>
+                            <textarea id="activities" name="activities" rows="4" cols="50" placeholder="type extracurricular activities"></textarea>
+                        </div>
+                        <div class="input-fields">
+                            <label>Professional Courses</label>
+                            <input type="text" placeholder="Enter Professional Courses" required>
+                        </div>
+                        <div class="input-fields">
+                            <label>Desired Career Path</label>
+                            <input type="text" placeholder="Enter Career Path" required>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="button-container">
+                    <button type="submit">
+                        <span class="btntext">Next</span>
+                        <i class="uil uil-navigator"></i>
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
